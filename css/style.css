@@ -23,55 +23,48 @@ button {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* ROOT */
-
+:root{
+    --primary-button-color: #185bb9;
+    --white-color:white;
+    --blue-color-500:#1c72e8;
+    --blue-color-800:#12263d;
+    --orange-color-600: #ff8f00;
+    --grey-color-600:#6c757d;
+}
 
 /**************************************
     HEADER
 ***************************************/
-#main-header {
+header{
+    position: fixed;
+    z-index: 30;
+    top:0%;
+    left: 0%;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
 }
+.col-big-header{
+    flex-grow: 1;
+}
+.logo-small{
+    width: 3rem;
+}
+
+/**************************************
+    ASIDE
+***************************************/
+
+
 
 /**************************************
     MAIN
 ***************************************/
-main {
-    width: 100%;
-    height: calc(100vh - 70px);
-    display: flex;
-}
 
-main > aside {
-    width: 200px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#main-content {
-    width: calc(100% - 200px);
-    height: 100%;
-    overflow: auto;
-}
-
-#main-content > header {
-    width: 100%;
-}
 
 /**************************************
     MEDIAQUERY
 ***************************************/
-@media all and (max-width: 992px) {
-    main > aside {
-        width: 80px;
-    }
-
-    #main-content {
-        width: calc(100% - 80px);
-    }
-}
