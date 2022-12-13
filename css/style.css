@@ -2,6 +2,10 @@
         REGOLE GENERALI
 ***************************************/
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* RESET */
 ul, ol {
     list-style: none;
@@ -27,17 +31,47 @@ img {
 /**************************************
     HEADER
 ***************************************/
-
+#main-header {
+    width: 100%;
+    height: 70px;
+}
 
 /**************************************
     MAIN
 ***************************************/
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+}
 
+main > aside {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-/**************************************
-    FOOTER
-***************************************/
+#main-content {
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow: auto;
+}
+
+#main-content > header {
+    width: 100%;
+}
 
 /**************************************
     MEDIAQUERY
 ***************************************/
+@media all and (max-width: 992px) {
+    main > aside {
+        width: 80px;
+    }
+
+    #main-content {
+        width: calc(100% - 80px);
+    }
+}
