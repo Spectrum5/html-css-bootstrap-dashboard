@@ -70,6 +70,11 @@ header{
     height: 100%;
 }
 
+.my-hover:hover{
+    background-color: var(--grey-color);
+    cursor: pointer;
+}
+
 
 /**************************************
     MAIN
