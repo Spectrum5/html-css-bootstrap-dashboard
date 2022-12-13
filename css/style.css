@@ -85,6 +85,7 @@ header{
 }
 
 
+
 /**************************************
     MAIN
 ***************************************/
@@ -100,6 +101,35 @@ header{
 
 .top-main button{
     background-color: var(--primary-button-color);
+}
+
+.table-avatar{
+    width: 1.5625rem;
+}
+
+.table th:not(:first-child),
+.table td:not(:first-child){
+    text-align: center;
+}
+
+.my-small-button-card{
+    width: 1.6rem;
+    height: 1.3rem;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: .25rem;
+    
+}
+
+.my-small-button-card i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /**************************************
