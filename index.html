@@ -85,7 +85,7 @@
                 <div class="my-row">
                         <!-- aside -->
                     <aside class="flex-shrink-0">
-                        <div class="my-col-small p-3 text-center flex-column d-flex">
+                        <div style="background-image: url('img/sidebar-bg.png');" class="my-col-small p-3 text-center flex-column d-flex">
                             <div class="col-12">
                                 <div class="mb-3 px-3 my-hover">
                                     <i class="fa-solid fa-house"></i>
@@ -138,8 +138,30 @@
                                 <span class="display-5">125</span>
                             </div>
 
-                            <div class="col-12 col-xl-2 p-3">
-                                <button class=" my-button">Nuovo studente + </button>
+                            <div class="col-12 col-xl-2 p-3 text-end">
+                                <span class="p-3">
+                                    Nuovo Studente
+                                </span>
+                                <!-- Inizio offcanvas -->
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <!-- Titolo offcanvas -->
+                                        <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row g-3">
+                                            <div class="col">
+                                            <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                                            </div>
+                                            <div class="col">
+                                            <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -365,7 +387,7 @@
                                               </h2>
 
                                               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                <div class="accordion-body">Sì =)</div>
                                               </div>
                                             </div>
                                           </div>
