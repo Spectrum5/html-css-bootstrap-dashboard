@@ -6,6 +6,12 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.my-row {
+    display: flex;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+
 /* RESET */
 ul, ol {
     list-style: none;
@@ -30,10 +36,10 @@ img {
 :root{
     --primary-button-color: #185bb9;
     --white-color:white;
-    --blue-color-500:#1c72e8;
-    --blue-color-800:#12263d;
-    --orange-color-600: #ff8f00;
-    --grey-color-600:#6c757d;
+    --blue-color:#1c72e8;
+    --dark-blue-color:#12263d;
+    --orange-color: #ff8f00;
+    --grey-color:#6c757d;
 }
 
 /**************************************
@@ -57,7 +63,12 @@ header{
 /**************************************
     ASIDE
 ***************************************/
-
+.my-col-small {
+    max-width: 200px;
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    height: 100%;
+}
 
 
 /**************************************
